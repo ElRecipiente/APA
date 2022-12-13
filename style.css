@@ -328,3 +328,42 @@ article img {
 .item:hover .capture-videos img {
     filter:blur(2px);
 }
+
+/* PAGE CONTACT */ 
+
+.container h1 {
+    text-align: center;
+}
+
+/* Formulaire */
+
+.formulaire {
+    max-width: 1100px;
+    margin:0px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding:30px 10px;
+    border-radius:1.5em;
+    box-sizing: border-box;
+    color:white;
+}
+
+.formulaire form {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+.formulaire form input {
+    width:30%;
+    margin-bottom: 10px;
+}
+
+.formulaire form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
