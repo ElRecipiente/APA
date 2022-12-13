@@ -12,9 +12,17 @@ body {
 
 
 /* Cards */
+.services {
+    margin:50px 0;
+}
+.services h1 {
+    text-align: center;
+    margin:50px;
+}
 
 .card-wrapper {
     width: 60%;
+    margin:auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3em;
@@ -22,7 +30,9 @@ body {
 
 .card {
     border-radius:1em;
-    border:1px solid black;
+    border:1px solid rgba(255, 255,255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
 }
 
 .card img {
@@ -31,7 +41,49 @@ body {
     border-radius: 1em 1em 0 0;
 }
 
-.text {
+.description {
     padding:25px;
 }
 
+/* Contact */
+.content-wrapper {
+    color:white;
+    background-color:rgb(41, 41, 41);
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;
+}
+
+
+.text {
+    display:flex;
+    flex-direction:column;
+    width:50%;
+}
+
+.content-wrapper > a {
+    margin:auto;
+    width:50%;
+    text-decoration:none;
+}
+
+.content-wrapper > h1 {
+    height:50%;
+}
+
+.content-wrapper > p {
+    height: 50%;
+}
+
+/* Footer */
+#footer {
+    background-color: beige;
+}
+
+/* Copyright*/
+#copyright {
+    padding:1em;
+    background-color: rgb(20, 20, 19);
+    text-align: center;
+    color:rgb(197, 197, 197);
+}
