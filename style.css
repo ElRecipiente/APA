@@ -14,9 +14,65 @@ h1 {
     font-size: 2em;
 }
 
+/* PAGE PROJET */
+
+.flexboxes{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.box-top{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(197, 197, 255);
+    padding: 1em;
+}
+
+.box-top-child{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    border-radius: 1em;
+    padding: 1em;
+    align-items: center;
+}
+
+.box-top>p{
+    width: 40%;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.box-fly{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1em;
+    background: rgb(197,197,255);
+    background: linear-gradient(180deg, rgba(197,197,255,1) 50%, rgba(255,255,255,1) 50%);
+}
+
+.box-bottom{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.box-bottom>p{
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* PAGE INDEX */
+
 /* Menu Nav */
 
-.flexnav{
+.flex-nav{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -24,7 +80,7 @@ h1 {
     align-items: center;
 }
 
-.flexnav>img{
+.flex-nav>img{
     margin-left: 5em;
 }
 
@@ -51,17 +107,17 @@ nav>ul>.button>a:hover{
 
 /* Présentation */
 
-.flexpresent{
+.flex-present{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
 }
 
-.flexpresent>img{
+.flex-present>img{
     border-radius: 1em;
 }
 
-.flexpresent>p{
+.flex-present>p{
     width: 40%;
     margin-top: auto;
     margin-bottom: auto;
@@ -72,7 +128,7 @@ nav>ul>.button>a:hover{
 
 /* Réalisations */
 
-.flexreal{
+.flex-real{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
