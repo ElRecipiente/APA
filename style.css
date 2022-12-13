@@ -10,6 +10,73 @@ body {
     height:100;
 }
 
+h1 {
+    font-size: 2em;
+}
+
+/* Menu Nav */
+
+.flexnav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+.flexnav>img{
+    margin-left: 5em;
+}
+
+nav{
+    margin-right: 5em;
+}
+
+nav>ul>.button{
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    padding: 1em;
+}
+
+nav>ul>.button>a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+nav>ul>.button>a:hover{
+    color: yellowgreen;
+}
+
+/* Présentation */
+
+.flexpresent{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.flexpresent>img{
+    border-radius: 1em;
+}
+
+.flexpresent>p{
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 1em;
+    border: outset;
+    padding: 1em;
+}
+
+/* Réalisations */
+
+.flexreal{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
 
 /* Cards */
 
