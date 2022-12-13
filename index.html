@@ -7,11 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Site APA</title>
+    <script>
+        window.addEventListener("scroll", (event) => {
+            let scroll = this.scrollY;
+            let magicBanner = document.getElementById('magic-banner')
+            let headerHeight = document.getElementById("hvideo").getBoundingClientRect().height
+            if (scrollY > headerHeight) {
+                magicBanner.style.opacity = 1;
+            } else {
+                magicBanner.style.opacity = 0;
+            }
+        });
+    </script>
 </head>
 
 <body>
     <section><!-- Nicow bosse là-->
-        <header>
+        <header id="hvideo">
+            <div id="magic-banner">
             <div class="flex-nav">
                 <img src="img/motion-design.jpg" alt="logo" width="192" height="108">
                 <nav>
@@ -22,6 +35,7 @@
                         <li class="button"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
             </div>
             <video muted autoplay loop src="nuitdu12.mp4" width="100%"></video>
         </header>

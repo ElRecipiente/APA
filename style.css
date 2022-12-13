@@ -14,61 +14,13 @@ h1 {
     font-size: 2em;
 }
 
-/* PAGE PROJET */
-
-.flexboxes{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-}
-
-.box-top{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    width: 100%;
-    background-color: rgb(197, 197, 255);
-    padding: 1em;
-}
-
-.box-top-child{
-    display: flex;
-    flex-flow: column;
-    width: 40%;
-    border-radius: 1em;
-    padding: 1em;
-    align-items: center;
-}
-
-.box-top>p{
-    width: 40%;
-    border-radius: 1em;
-    padding: 1em;
-}
-
-.box-fly{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    padding: 1em;
-    background: rgb(197,197,255);
-    background: linear-gradient(180deg, rgba(197,197,255,1) 50%, rgba(255,255,255,1) 50%);
-}
-
-.box-bottom{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    padding: 1em;
-}
-
-.box-bottom>p{
-    width: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 /* PAGE INDEX */
+#magic-banner{
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+}
 
 /* Menu Nav */
 
@@ -121,8 +73,6 @@ nav>ul>.button>a:hover{
     width: 40%;
     margin-top: auto;
     margin-bottom: auto;
-    border-radius: 1em;
-    border: outset;
     padding: 1em;
 }
 
@@ -208,6 +158,95 @@ nav>ul>.button>a:hover{
     background-color: rgb(20, 20, 19);
     text-align: center;
     color:rgb(197, 197, 197);
+}
+
+/* PAGE SERVICES */
+
+.flexboxes-services{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.flexboxes-services p{
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.flexboxes-services img{
+    border-radius: 1em;
+}
+
+/*@media screen and (max-width:930px){
+    .flexboxes-services{
+        flex-flow: column wrap;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}*/
+
+/* PAGE PROJET */
+
+.flexboxes-projet{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.box-top{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+    padding: 1em;
+    color: white;
+}
+
+.box-top-child{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    border-radius: 1em;
+    padding: 1em;
+    align-items: center;
+}
+
+.box-top>p{
+    width: 40%;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.box-fly{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1em;
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgb(42, 42, 42) 50%, rgba(255,255,255,1) 50%);
+}
+
+.box-fly img{
+    border-radius: 1em;
+}
+
+.box-bottom{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.box-bottom>p{
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* PAGE RÉALISATION */
