@@ -14,6 +14,31 @@ h1 {
     font-size: 2em;
 }
 
+/* REPONSIVE HERE */
+
+@media screen and (max-width:930px){
+    .flexboxes-services{
+        flex-flow: column wrap;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-nav{
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .flex-nav>img{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    nav .button{
+        width: 100%;
+    }
+}
+
 /* PAGE INDEX */
 #magic-banner{
     opacity: 0;
@@ -40,14 +65,14 @@ nav{
     margin-right: 5em;
 }
 
-nav>ul>.button{
+nav .button{
     display: inline-block;
     text-align: center;
     list-style-type: none;
     padding: 1em;
 }
 
-nav>ul>.button>a{
+nav .button>a{
     text-decoration: none;
     color: white;
     transition: 1s;
@@ -180,15 +205,6 @@ nav>ul>.button>a:hover{
 .flexboxes-services img{
     border-radius: 1em;
 }
-
-/*@media screen and (max-width:930px){
-    .flexboxes-services{
-        flex-flow: column wrap;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }    
-}*/
 
 /* PAGE PROJET */
 
