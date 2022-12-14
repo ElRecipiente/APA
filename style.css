@@ -7,7 +7,7 @@ body {
     margin:0;
     padding:0;
     width: 100%;
-    height:100;
+    height:100%;
 }
 
 /* REPONSIVE HERE */
@@ -380,39 +380,53 @@ article img {
 
 /* PAGE CONTACT */ 
 
-.container h1 {
-    text-align: center;
-}
-
-/* Formulaire */
-
+/*Formulaire*/
 .formulaire {
-    max-width: 1100px;
-    margin:0px auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding:30px 10px;
-    border-radius:1.5em;
-    box-sizing: border-box;
-    color:white;
-}
-
-.formulaire form {
+    margin:10em;
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    max-width: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
-.formulaire form input {
-    width:30%;
-    margin-bottom: 10px;
+form {
+    width:50%;
+    border-radius:1em;
 }
 
-.formulaire form textarea {
-    width: 100%;
-    margin-bottom: 10px;
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form-wrapper .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width:100%;
+    padding:0 20px;
+    margin:20px 0;
+}
+
+.box label {
+    margin-bottom: 20px;
+}
+.box input, select {
+    height:40px;
+    width:100%;
+    border-radius:1.5em;
+    border:1px solid grey;
+    padding:0 15px;
+}
+
+.box textarea {
+    border-radius: 10px;
+    border:1px solid grey;
+}
+
+button {
+    text-decoration:none;
+
 }
