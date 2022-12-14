@@ -362,11 +362,13 @@ article img {
 
 /* PAGE CONTACT */
 
+
 /* Formulaire */
 
 .formulaire {
-    margin:10em;
+    margin: 10em 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -408,7 +410,14 @@ form {
 }
 
 button {
-    text-decoration:none;
+    cursor: pointer;
+    border:none;
+    background:none;
+    color:white;
+    background-color:#141413;
+    border-radius:1.5em;
+    padding:10px;
+
 }
 
 /* REPONSIVE HERE */
