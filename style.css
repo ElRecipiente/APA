@@ -6,7 +6,7 @@ body {
     margin:0;
     padding:0;
     width: 100%;
-    height:100;
+    height:100%;
 }
 
 /* PAGE INDEX */
@@ -360,9 +360,6 @@ article img {
     filter:blur(2px);
 }
 
-/* PAGE CONTACT */ 
-
-/*Formulaire*/
 /* PAGE CONTACT */
 
 /* Formulaire */
@@ -376,7 +373,6 @@ article img {
 
 form {
     width:50%;
-    border-radius:1em;
 }
 
 .form-wrapper {
@@ -384,7 +380,6 @@ form {
     flex-direction: row;
     justify-content: flex-start;
 }
-
 .form-wrapper .box {
     display: flex;
     flex-direction: column;
@@ -399,107 +394,21 @@ form {
 .box label {
     margin-bottom: 20px;
 }
+
 .box input, select {
     height:40px;
-    width:100%;
     border-radius:1.5em;
     border:1px solid grey;
     padding:0 15px;
 }
 
-.formulaire form {
-    display: flex;
-    flex-direction: column;
-}
-
-.box {
-    width:100%;
-    padding:0 20px;
-    margin:20px 0;
-}
-
-.box label {
-    margin-bottom: 20px;
-}
-.box input, select {
-    height:40px;
-    width:100%;
-    border-radius:1.5em;
+.box textarea {
+    border-radius: 10px;
     border:1px solid grey;
-    padding:0 15px;
 }
 
 button {
     text-decoration:none;
-}
-
-/* REPONSIVE HERE */
-
-@media screen and (max-width:930px){
-    .flex-present{
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    .flex-present img{
-        margin-top: 1em;
-        margin-bottom: 1em;
-        width: 100%;
-    }
-    .flex-present p{
-        width: fit-content;
-    }
-    .flex-real{
-        flex-flow: column;
-        align-items: center;
-    }
-    .flex-real>*{
-        width: 100%;
-        border-radius: 1em;
-    }
-    .display-none{
-        display: none;
-    }
-    .box-top{
-        flex-flow: column wrap;
-    }
-    .box-top-child1{
-        width: 100%;
-    }
-    .box-top-child2{
-        width: fit-content;
-    }
-    .flexboxes-services{
-        flex-flow: column wrap;
-        justify-content: center;
-    }
-    .boxes-services{
-        width: fit-content;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .banner{
-        width: 100%;
-        height: fit-content;
-    }
-    h1{
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    #order3{
-        order: 3;
-    }
-    #order4{
-        order: 4;
-    }
-    .flex-nav img{
-        display: none;
-    }
-    nav .button{
-        width: 100%;
-    }
-    nav{
-        width: 100%
-    }
 }
 
 /* REPONSIVE HERE */
