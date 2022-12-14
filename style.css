@@ -86,7 +86,6 @@ nav>ul>.button>a:hover{
 }
 .services h1 {
     text-align: center;
-    margin:50px;
 }
 
 .card-wrapper {
@@ -361,11 +360,7 @@ article img {
     filter:blur(2px);
 }
 
-/* PAGE CONTACT */ 
-
-.container h1 {
-    text-align: center;
-}
+/* PAGE CONTACT */
 
 /* Formulaire */
 
@@ -406,8 +401,6 @@ article img {
     .flex-present{
         flex-flow: column wrap;
         align-items: center;
-        margin-left: 1em;
-        margin-right: 1em;
     }
     .flex-present img{
         margin-top: 1em;
@@ -420,12 +413,9 @@ article img {
     .flex-real{
         flex-flow: column;
         align-items: center;
-        margin-left: 1em;
-        margin-right: 1em;
     }
     .flex-real>*{
         width: 100%;
-        margin: 2em;
         border-radius: 1em;
     }
     .display-none{
@@ -436,8 +426,6 @@ article img {
     }
     .box-top-child1{
         width: 100%;
-        margin-left: 1em;
-        margin-right: 1em;
     }
     .box-top-child2{
         width: fit-content;
