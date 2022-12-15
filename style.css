@@ -1,5 +1,5 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 }
 
 h1{
+    font-family: 'Montserrat';
     text-align: center;
 }
 
@@ -379,7 +380,6 @@ article img {
 /* Tableau */
 
 .schedule{
-    border-radius: 1em;
     width: fit-content;
     text-align: center;
     margin-left: auto;
@@ -393,7 +393,6 @@ th{
 }
 td{
     padding: 1em;
-    /* border-radius: 2em; */
 }
 .green{
     background-color: #7EC89C;
@@ -607,9 +606,24 @@ button {
     .form-wrapper {
         flex-direction: column;
     }
-
     .box {
         padding:0;
+    }
+
+    table thead {
+       display: none;
+      }
+      
+      table tr {
+        display: block;
+      }
+      
+      table td {
+        display: block;
+      }
+
+    table td::before {
+        content:attr(data-label);
     }
 
     /* AUTRES */

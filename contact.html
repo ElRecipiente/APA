@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Site APA</title>
 </head>
@@ -24,35 +27,39 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.4756280076813!2d5.596692815780146!3d45.31901715113989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ae585b8f1ab81%3A0x7481918fb8dca248!2s340%20Rue%20de%20l&#39;Eygala%2C%2038430%20Moirans!5e0!3m2!1sfr!2sfr!4v1670943575995!5m2!1sfr!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </header>
-    <div class="container">
+    <div class="main">
         <h1>Nous contacter</h1>
         <div class="schedule">
             <table>
-                <tr>
-                    <th></th>
-                    <th>Lundi</th>
-                    <th>Mardi</th>
-                    <th>Mercredi</th>
-                    <th>Jeudi</th>
-                    <th>Vendredi</th>
-                </tr>
-                <tr>
-                    <td>8h-12h</td>
-                    <td class="green"></td>
-                    <td class="green"></td>
-                    <td class="yellow"></td>
-                    <td class="green"></td>
-                    <td class="red"></td>
-                </tr>
-                <tr>
-                    <td>14h-17h</td>
-                    <td class="green"></td>
-                    <td class="yellow"></td>
-                    <td class="red"></td>
-                    <td class="yellow"></td>
-                    <td class="red"></td>
-                </tr>
-          </table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8h-12h</td>
+                        <td data-label="Lundi"class="green"></td>
+                        <td data-label="Mardi"class="green"></td>
+                        <td data-label="Mercredi"class="yellow"></td>
+                        <td data-label="Jeudi"class="green"></td>
+                        <td data-label="Vendredi"class="red"></td>
+                    </tr>
+                    <tr>
+                        <td>14h-17h</td>
+                        <td data-label="Lundi"class="green"></td>
+                        <td data-label="Mardi"class="yellow"></td>
+                        <td data-label="Mercredi"class="red"></td>
+                        <td data-label="Jeudi"class="yellow"></td>
+                        <td data-label="Vendredi"class="red"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="formulaire">
             <form action="" method="post">
