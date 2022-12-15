@@ -370,7 +370,7 @@ article img {
 /* Formulaire */
 
 .formulaire {
-    margin: 10em 0;
+    margin:2em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -526,12 +526,16 @@ button {
     }
     .title {
         opacity:1;
+        text-transform: uppercase;
+        letter-spacing:1px;
     }
     .item .capture-videos img {
         filter:blur(2px);
     }
+    .light {
+        font-weight: normal;
+    }
     
-
     /* SERVICES */
 
     .flexboxes-services{
@@ -545,7 +549,21 @@ button {
     }
     .boxes-services img{
         margin-top: 1em;
-        margin-bottom: 1em;    }
+        margin-bottom: 1em;    
+    }
+    
+    /* CONTACT */
+    
+    form {
+        width:75%;
+    }
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+    .box {
+        padding:0;
+    }
 
     /* AUTRES */
 
@@ -555,6 +573,8 @@ button {
     }
     .banner h1 {
         font-size: 2.5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
     .order1{
         order: 1;
@@ -575,6 +595,6 @@ button {
         width: 100%;
     }
     nav{
-        width: 100%
+        width: 100%;
     }
 }
