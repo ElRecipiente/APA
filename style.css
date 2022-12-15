@@ -15,7 +15,7 @@ h1{
     padding-bottom: 1em;
 }
 
-.align-start{
+.align-h{
     text-align: start;
 }
 
@@ -461,9 +461,34 @@ button {
     .content-wrapper{
         flex-flow: column;
     }
+    .text{
+        align-self: center;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .button-devis{
+        align-self: center;
+        padding-top: 2em;
+        padding-left: 0;
+    }
+    .align-h{
+        text-align: center;
+        line-height: 1em;
+    }
     .card-wrapper {
         width:75%;
         grid-template:1fr / 1fr;
+    }
+    .footer-wrapper{
+        flex-flow: column;
+    }
+    .footer-wrapper .information{
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .footer-wrapper img{
+        width: 60%;
     }
     
 
