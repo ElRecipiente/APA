@@ -86,8 +86,12 @@ nav>ul>.button>a:hover{
 
 /* Cards */
 .services {
-    margin:50px 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
+
 .card-wrapper {
     width: 60%;
     display:grid;
@@ -100,6 +104,7 @@ nav>ul>.button>a:hover{
     border:1px solid rgba(255, 255,255, 0.8);
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
+    z-index: -1;
 }
 
 .card img {
@@ -299,7 +304,7 @@ nav>ul>.button>a:hover{
 
 /* Gallery*/
 
-.grid {
+.gallery {
     width:60%;
     margin:auto;
     display:grid;
@@ -445,6 +450,11 @@ button {
     .display-none{
         display: none;
     }
+    .card-wrapper {
+        width:75%;
+        grid-template:1fr / 1fr;
+    }
+    
 
     /* PROJET */
 
@@ -473,6 +483,19 @@ button {
         padding-bottom: 1em;
     }
 
+    /* REALISATION */
+    .gallery {
+        width:75%;
+        grid-template:1fr / 1fr;
+    }
+    .title {
+        opacity:1;
+    }
+    .item .capture-videos img {
+        filter:blur(2px);
+    }
+    
+
     /* SERVICES */
 
     .flexboxes-services{
@@ -494,9 +517,8 @@ button {
         width: 100%;
         height: fit-content;
     }
-    h1{
-        padding-top: 1em;
-        padding-bottom: 1em;
+    .banner h1 {
+        font-size: 2.5em;
     }
     .order1{
         order: 1;
