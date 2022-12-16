@@ -39,6 +39,10 @@ h1{
     transition: 0.5s;
 }
 
+video {
+    margin-bottom: 2em;
+}
+
 /* Menu Nav */
 
 .flex-nav{
@@ -84,6 +88,7 @@ nav>ul>.button>a:hover{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    padding:2em 0;
 }
 
 .flex-present>img{
@@ -102,6 +107,7 @@ nav>ul>.button>a:hover{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    padding:2em 0;
 }
 
 .flex-real a{
@@ -118,21 +124,21 @@ nav>ul>.button>a:hover{
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    padding:2em 0;
 }
 
 .card-wrapper {
-    width: 60%;
+    width: 100%;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3em;
+    gap: 4em;
 }
 
 .card {
+    width:100%;
     border-radius:1em;
     border:1px solid rgba(255, 255,255, 0.8);
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
-    z-index: -1;
 }
 
 .card img {
@@ -143,7 +149,7 @@ nav>ul>.button>a:hover{
 }
 
 .description {
-    padding:25px;
+    padding:1em 0;
 }
 
 /* Contact */
@@ -199,7 +205,7 @@ nav>ul>.button>a:hover{
 #footer {
     background-color:#1d1d1d;
     color:rgb(197, 197, 197);
-    padding:5em;
+    padding:3em;
 }
 
 .footer-wrapper {
@@ -411,7 +417,7 @@ nav>ul>.button>a:hover{
 /* Tableau */
 
 .schedule {
-    width: fit-content;
+    width: 60%;
     text-align: center;
     margin:0 auto;
 }
@@ -448,7 +454,7 @@ td {
 }
 
 form {
-    width:50%;
+    width:60%;
 }
 
 .form-wrapper {
