@@ -580,13 +580,13 @@ button {
         flex-flow: column wrap;
     }
     .box-top-child1{
-        width: 100%;
+        width: 80%;
     }
     .box-top-child2{
-        width: 100%;
+        width: 80%;
     }
     .box-fly img{
-        width: 100%;
+        width: 80%;
     }
     .box-bottom{
         flex-flow: column wrap;
