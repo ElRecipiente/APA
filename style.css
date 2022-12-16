@@ -9,9 +9,20 @@ body {
     height:100%;
 }
 
+.main section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main section.fullsize{
+    width: 100%;
+    margin: 0;
+}
+
 h1{
     font-family: 'Montserrat';
     text-align: center;
+    font-size: xx-large;
 }
 
 .align-h{
@@ -51,7 +62,7 @@ nav ul{
 }
 
 nav ul li{
-    margin-right: 2em;
+    margin-right: 2em; /* A modifier */
 }
 
 nav .button>a{
@@ -69,7 +80,7 @@ nav>ul>.button>a:hover{
 .flex-present{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .flex-present>img{
@@ -78,8 +89,7 @@ nav>ul>.button>a:hover{
 
 .flex-present>p{
     width: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0;
     padding: 1em;
 }
 
@@ -218,7 +228,7 @@ nav>ul>.button>a:hover{
 .flexboxes-services{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: 5em;
@@ -227,7 +237,7 @@ nav>ul>.button>a:hover{
 
 .boxes-services{
     width: 40%;
-    margin: 1em;
+    margin: 1em 0;
 }
 
 .flexboxes-services img{
@@ -244,17 +254,17 @@ nav>ul>.button>a:hover{
 .flexboxes-projet{
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
 .box-top{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: rgb(10, 10, 10);
-    padding: 5em;
+    padding: 5em 0;
     color: white;
 }
 
@@ -266,16 +276,14 @@ nav>ul>.button>a:hover{
 }
 .box-top-child2{
     width: 40%;
-}
-.box-top>p{
-    width: 40%;
+    text-align: justify;
 }
 
 .box-fly{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 1em;
+    padding: 2em 0;
     background: rgb(42,42,42);
     background: linear-gradient(180deg, rgb(10, 10, 10) 50%, rgba(255,255,255,1) 50%);
 }
@@ -287,17 +295,18 @@ nav>ul>.button>a:hover{
 .box-bottom{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    padding: 5em;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2em auto;
 }
 
 .box-bottom>p{
-    width: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 50%;
+    margin: auto 0;
+    text-align: justify;
 }
 
-/* PAGE RÉALISATION */
+/* PAGE REALISATION */
 
 /* Banner */
 .banner {
