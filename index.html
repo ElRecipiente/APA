@@ -11,18 +11,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Site APA</title>
-    <script>
-        window.addEventListener("scroll", (event) => {
-            let scroll = this.scrollY;
-            let magicBanner = document.getElementById('magic-banner')
-            let headerHeight = document.getElementById("hvideo").getBoundingClientRect().height
-            if (scrollY > headerHeight) {
-                magicBanner.style.opacity = 1;
-            } else {
-                magicBanner.style.opacity = 0;
-            }
-        });
-    </script>
 </head>
 
 <body>
@@ -42,6 +30,7 @@
             </div>
         </div>
         <video muted autoplay loop src="nuitdu12.mp4" width="100%"></video>
+        <ion-icon class="arrow-bottom" name="chevron-down-outline"></ion-icon>
     </header>
     <div class="main"><!--ne pas oublier de mettre container PARTOUT-->
         <section>
@@ -155,6 +144,7 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
