@@ -2,6 +2,10 @@
     font-family: 'Manrope', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -77,12 +81,41 @@ nav>ul>.button>a:hover {
     color: yellowgreen;
 }
 
-.arrow-bottom{
+.arrow-bottom {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 1em;
+    left: 1em;
     color: white;
     font-size: 30px;
+    cursor: pointer;
+    animation: boing 3s infinite;
+}
+
+@keyframes boing {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translatey(-30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+    
+    90% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
 }
 
 /* Présentation */
@@ -701,6 +734,10 @@ button {
     }
 
     /* AUTRES */
+
+    .arrow-bottom{
+        display: none;
+    }
 
     .banner {
         width: 100%;
