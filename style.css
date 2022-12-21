@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -38,6 +34,12 @@ h1 {
 }
 
 /* PAGE INDEX */
+
+.flex-nav a img {
+  width: 50%;
+  height: 50%;
+  padding-left: 3em;
+}
 
 #magic-banner {
   opacity: 0;
@@ -551,6 +553,9 @@ button {
 
 @media screen and (max-width: 930px) {
   /* INDEX */
+  #magic-banner nav ul {
+    display: none;
+  }
 
   .flex-present {
     flex-flow: column wrap;
