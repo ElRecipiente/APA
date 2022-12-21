@@ -2,12 +2,12 @@
   font-family: "Manrope", sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,10 +46,6 @@ h1 {
   width: 100%;
   transition: 0.5s;
   z-index: 10;
-}
-
-#magic-banner nav ul {
-  display: none;
 }
 
 video {
@@ -92,40 +88,40 @@ nav > ul > .button > a:hover {
 }
 
 .arrow-bottom {
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    animation: boing 3s infinite;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  animation: boing 3s infinite;
 }
 
 @keyframes boing {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
 
-    40% {
-        transform: translatey(-30px);
-        opacity: 0;
-    }
+  40% {
+    transform: translatey(-30px);
+    opacity: 0;
+  }
 
-    50% {
-        transform: translateY(-30px);
-        opacity: 1;
-    }
-    
-    90% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateY(0);
-        opacity: 0;
-    }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
 }
 
 /* Présentation */
@@ -743,6 +739,9 @@ button {
   }
 
   /* AUTRES */
+  #magic-banner nav ul {
+    display: none;
+  }
 
   .flex-nav img {
     display: none;
@@ -763,6 +762,7 @@ button {
   nav ul li {
     width: 100%;
   }
+
   .burger {
     width: 35px;
     height: 24px;
