@@ -202,7 +202,7 @@ nav > ul > .button > a:hover {
 
 .card:hover {
   transform: scale(1.03);
-  animation: pulse 1s ;
+  animation: pulse 1s;
   animation-fill-mode: forwards;
 }
 
@@ -322,11 +322,11 @@ nav > ul > .button > a:hover {
   color: yellowgreen;
 }
 
-.social ion-icon{
+.social ion-icon {
   transition: 1s;
 }
 
-.social ion-icon:hover{
+.social ion-icon:hover {
   transform: scale(1.2);
 }
 
@@ -363,18 +363,18 @@ nav > ul > .button > a:hover {
   transition: 1s;
 }
 
-.flexboxes-services img:hover{
+.flexboxes-services img:hover {
   transform: scale(1.01);
-  transform:translateY(-0.3em);
+  transform: translateY(-0.3em);
 }
 
 .flexboxes-services p {
   width: fit-content;
 }
 
-.flexboxes-services .boxes-services:hover{
+.flexboxes-services .boxes-services:hover {
   transform: scale(1.01);
-  transform:translateY(-0.3em)
+  transform: translateY(-0.3em);
 }
 
 /* PAGE PROJET */
@@ -399,7 +399,7 @@ nav > ul > .button > a:hover {
 
 @keyframes shadow {
   0% {
-    color: rgb(10, 10, 10)
+    color: rgb(10, 10, 10);
   }
 
   100% {
@@ -436,9 +436,9 @@ nav > ul > .button > a:hover {
   transition: 1s;
 }
 
-.box-fly img:hover{
+.box-fly img:hover {
   transform: scale(1.03);
-  animation: pulse 1s ;
+  animation: pulse 1s;
   animation-fill-mode: forwards;
 }
 .box-bottom {
@@ -468,6 +468,7 @@ nav > ul > .button > a:hover {
   justify-content: center;
   color: white;
   text-transform: uppercase;
+  margin-bottom: 5em;
 }
 
 .banner h1 {
@@ -485,7 +486,7 @@ nav > ul > .button > a:hover {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 2em;
-  margin-bottom: 5em;
+  margin: 5em 0;
 }
 
 .capture-videos img {
@@ -534,6 +535,10 @@ nav > ul > .button > a:hover {
 }
 
 /* PAGE CONTACT */
+
+.map {
+  margin-bottom: 5em;
+}
 
 /* Tableau */
 
@@ -607,7 +612,8 @@ label.error {
   font-size: 12px;
 }
 
-.box input, select {
+.box input,
+select {
   height: 40px;
   border-radius: 1.5em;
   border: 1px solid grey;
@@ -633,7 +639,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 /* REPONSIVE HERE */
@@ -781,6 +787,7 @@ button:hover {
   }
 
   .light {
+    font-size: 25px;
     font-weight: normal;
   }
 
@@ -866,6 +873,7 @@ button:hover {
   }
 
   nav ul li {
+    margin: 0;
     width: 100%;
   }
 
