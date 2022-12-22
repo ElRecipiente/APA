@@ -77,30 +77,27 @@
                 </table>
             </div>
             <div class="formulaire">
-                <form id="validatorForm" action="" method="post">
+                <form name="validatorForm" id="validatorForm" action="">
                     <div class="form-wrapper">
                         <div class="box">
-                            <label for="nom">Nom*&nbsp;:</label>
-                            <input type="text" id="nom" placeholder="Entrez votre nom" required minlength="3"
-                                maxlength="20" />
+                            <label for="lastName">Nom&#42;&nbsp;:</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Entrez votre nom">
                         </div>
                         <div class="box">
-                            <label for="prenom">Prénom*&nbsp;:</label>
-                            <input type="text" id="prenom" placeholder="Entrez votre prénom" required minlength="3"
-                                maxlength="20" />
+                            <label for="name">Prénom&#42;&nbsp;:</label>
+                            <input type="text" id="name" name="name" placeholder="Entrez votre prénom"/>
                         </div>
                     </div>
                     <div class="form-wrapper">
                         <div class="box">
-                            <label for="mail">Votre email*&nbsp;:</label>
-                            <input type="text" id="mail" placeholder="ex : apa38@contact.fr" required minlength="5"
-                                maxlength="30" />
+                            <label for="email">Votre email&#42;&nbsp;:</label>
+                            <input type="text" id="email" name="email" placeholder="ex : apa38@contact.fr">
                         </div>
                         <div class="box">
-                            <label for="subject">Votre sujet :</label>
+                            <label for="subject">Votre sujet&#42;&nbsp;:</label>
                             <select name="subject" id="subject">
                                 <option value="">--Sélectionner une option--</option>
-                                <option value="question">J'ai une question...</option>
+                                <option value="question">J'ai une question sur vos prestations</option>
                                 <option value="motion-design">Corporate</option>
                                 <option value="motion-design">Motion design</option>
                                 <option value="captation-live">Captation live</option>
@@ -111,8 +108,8 @@
                     </div>
                     <div class="form-wrapper">
                         <div class="box">
-                            <label id="message">Message&nbsp;:</label>
-                            <textarea name="message" id="message" cols="25" rows="10"></textarea>
+                            <label id="comment">Votre message&#42;&nbsp;:</label>
+                            <textarea id="comment" name="comment" cols="20" rows="10"></textarea>
                         </div>
                     </div>
                     <div class="box">
@@ -141,9 +138,12 @@
     <div id="copyright">
         <p>&copy; APA 2022 - Mentions légales</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="menu.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>
