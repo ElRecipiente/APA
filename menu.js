@@ -2,9 +2,7 @@
 let magicBanner = document.getElementById("magic-banner");
 let scroll = this.scrollY;
 
-let headerHeight = document
-  .getElementById("hvideo")
-  .getBoundingClientRect().height;
+let headerHeight = document.getElementById("hvideo").getBoundingClientRect().height;
 
 window.addEventListener("scroll", (event) => {
   if (scrollY >= headerHeight - 100) {
