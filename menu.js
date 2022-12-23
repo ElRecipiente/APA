@@ -5,7 +5,7 @@ let scroll = this.scrollY;
 let headerHeight = document.getElementById("hvideo").getBoundingClientRect().height;
 
 window.addEventListener("scroll", (event) => {
-  if (scrollY >= headerHeight - 100) {
+  if (scrollY >= headerHeight) {
     magicBanner.style.opacity = 1;
   } else {
     magicBanner.style.opacity = 0;

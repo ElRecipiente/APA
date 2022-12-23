@@ -1040,3 +1040,68 @@ button:hover {
     color: #fbf5f3d8;
   }
 }
+
+@media screen and (max-width: 1440px){
+  .banner {
+    background-image: url("img/Le12_1440.jpg");
+  }
+
+  .footer-wrapper a img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .banner {
+    background-image: url("img/Le12_1024.jpg");
+  }
+
+  .footer-wrapper a img {
+    width: 130%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .banner {
+    background-image: url("img/Le12_768.jpg");
+  }
+
+  .footer-wrapper a img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .banner {
+    background-image: url("img/Le12_425.jpg");
+  }
+
+  .footer-wrapper a img {
+    width: 100%;
+  }
+
+  .footer-wrapper a img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .banner {
+    background-image: url("img/Le12_375.jpg");
+  }
+
+  .footer-wrapper a img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .banner {
+    background-image: url("img/Le12_320.jpg");
+  }
+
+  .footer-wrapper a img {
+    width: 100%;
+  }
+  
+}
