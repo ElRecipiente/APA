@@ -1,7 +1,7 @@
 const bannerScroll = document.querySelector(".arrow-bottom");
 
 bannerScroll.addEventListener("click", () => {
-    if (scrollY < headerHeight - 100) {
+    if (scrollY < headerHeight) {
         window.scrollTo(0, headerHeight);
     }
 });
