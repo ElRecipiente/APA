@@ -141,14 +141,26 @@ nav > ul > .button > a:hover {
   padding: 2em 0;
 }
 
-.flex-present > img {
+.flex-present img {
   border-radius: 1em;
+  transition: 1s;
 }
 
-.flex-present > p {
+.flex-present img:hover {
+  transform: scale(1.01);
+  transform: translateY(-0.3em);
+}
+
+.flex-present p {
   width: 40%;
   margin: auto 0;
   padding: 1em;
+  transition: 1s;
+}
+
+.flex-present p:hover {
+  transform: scale(1.01);
+  transform: translateY(-0.3em);
 }
 
 /* Réalisations */
