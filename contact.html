@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Site APA</title>
+    <title>APA - Agence de production audiovisuelle</title>
 </head>
 
 <body>
     <header id="hvideo">
         <div id="magic-banner">
             <div class="flex-nav">
-                <a href="index.html"><img src="img/Logo-only.png" alt="logo" /></a>
+                <a href="index.html"><img src="img/logo-apa.png" alt="logo" /></a>
                 <nav>
                     <div class="burger">
                         <span></span>
@@ -30,7 +30,7 @@
                             <a href="realisations.html">Réalisations</a>
                         </li>
                         <li class="button"><a href="services.html">Services</a></li>
-                        <li class="button"><a href="contact.html">Contact</a></li>
+                        <li class="button"><a href="contact.html" id="active">Contact</a></li>
                     </ul>
                     <div></div>
                 </nav>
@@ -83,7 +83,7 @@
                     <div class="form-wrapper">
                         <div class="box">
                             <label for="lastName">Nom&#42;&nbsp;:</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Entrez votre nom">
+                            <input type="text" id="lastName" name="lastName" placeholder="Entrez votre nom"/>
                         </div>
                         <div class="box">
                             <label for="name">Prénom&#42;&nbsp;:</label>
@@ -93,13 +93,13 @@
                     <div class="form-wrapper">
                         <div class="box">
                             <label for="email">Votre email&#42;&nbsp;:</label>
-                            <input type="text" id="email" name="email" placeholder="ex : apa38@contact.fr">
+                            <input type="text" id="email" name="email" placeholder="ex : apa38@contact.fr"/>
                         </div>
                         <div class="box">
                             <label for="subject">Votre sujet&#42;&nbsp;:</label>
                             <select name="subject" id="subject">
-                                <option value="">--Sélectionner une option--</option>
-                                <option value="question">J'ai une question sur vos prestations</option>
+                                <option value="">--Sélectionnez une option--</option>
+                                <option value="question">Demander un devis</option>
                                 <option value="motion-design">Corporate</option>
                                 <option value="motion-design">Motion design</option>
                                 <option value="captation-live">Captation live</option>

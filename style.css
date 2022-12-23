@@ -35,12 +35,6 @@ h1 {
 
 /* PAGE INDEX */
 
-.flex-nav a img {
-  width: 50%;
-  height: 50%;
-  padding-left: 3em;
-}
-
 #magic-banner {
   opacity: 0;
   position: fixed;
@@ -60,9 +54,15 @@ video {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  background-color: #141414;
+  background-color: white;
   align-items: center;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  height: 80px;
+  box-shadow: 1px 1px 15px 5px rgb(6, 24, 38, 0.7);
+}
+
+.flex-nav a img {
+  width: 30%;
+  padding-left: 3em;
 }
 
 nav {
@@ -79,14 +79,21 @@ nav ul li {
 
 nav .button > a {
   text-decoration: none;
-  color: white;
+  color: #061826;
   font-family: "Montserrat";
+  font-weight: 500;
   letter-spacing: 0.5px;
 }
 
 nav > ul > .button > a:hover {
-  transition: 1s;
-  color: yellowgreen;
+  transition: 0.2s;
+  font-weight: 600;
+  color: #f24236;
+}
+
+nav .button a#active {
+  font-weight: 600;
+  color: #f24236;
 }
 
 .arrow-bottom {
@@ -194,15 +201,12 @@ nav > ul > .button > a:hover {
 .card {
   width: 100%;
   border-radius: 1em;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: 1s;
-  padding: 1em;
+  transition: 0.4s;
 }
 
 .card:hover {
   transform: scale(1.03);
-  animation: pulse 1s;
+  animation: pulse 0.4s;
   animation-fill-mode: forwards;
 }
 
@@ -212,7 +216,7 @@ nav > ul > .button > a:hover {
   }
 
   100% {
-    box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -224,13 +228,19 @@ nav > ul > .button > a:hover {
 }
 
 .description {
-  padding: 1em 0;
+  padding: 1em;
+}
+
+.description h3 {
+  font-family: "Montserrat";
+  margin: 0;
+  color: #f24236;
 }
 
 /* Contact */
 .flex-contact {
   color: rgb(0, 0, 0);
-  background-color: #f2f2f2;
+  background-color: #fcfbfb;
   padding-bottom: 2em;
   padding-top: 1em;
 }
@@ -264,11 +274,11 @@ nav > ul > .button > a:hover {
   color: rgb(255, 255, 255);
   padding-bottom: 2em;
   padding-left: 2em;
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .button-devis:hover {
-  transform: scale(1.1);
+  transform: scale(0.92);
 }
 
 .button-devis a {
@@ -277,16 +287,15 @@ nav > ul > .button > a:hover {
 
 #devis {
   color: rgb(255, 255, 255);
-  border: 1px solid black;
   border-radius: 2em;
-  background-color: #141413;
-  padding: 1em;
+  background-color: #f24236;
+  padding: 0.8em;
 }
 
 /* Footer */
 #footer {
-  background-color: #1d1d1d;
-  color: rgb(197, 197, 197);
+  background-color: #061826;
+  color: #fbf5f3d8;
   padding: 3em;
 }
 
@@ -315,15 +324,15 @@ nav > ul > .button > a:hover {
   font-size: 25px;
   color: inherit;
   margin: 0 8px;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 .social > a:hover {
-  color: yellowgreen;
+  color: #f24236;
 }
 
 .social ion-icon {
-  transition: 1s;
+  transition: 0.2s;
 }
 
 .social ion-icon:hover {
@@ -333,7 +342,7 @@ nav > ul > .button > a:hover {
 /* Copyright */
 #copyright {
   padding: 1em;
-  background-color: rgb(20, 20, 19);
+  background-color: #04111a;
   text-align: center;
   font-size: 12px;
   font-weight: 700;
@@ -355,6 +364,11 @@ nav > ul > .button > a:hover {
   width: 40%;
   margin: 1em 0;
   transition: 1s;
+}
+
+.boxes-services h2 {
+  font-family: "Montserrat";
+  color: #f24236;
 }
 
 .flexboxes-services img {
@@ -630,16 +644,18 @@ button {
   cursor: pointer;
   border: none;
   background: none;
-  color: white;
-  background-color: #141413;
+  color: black;
+  border: 1px solid;
   border-radius: 1.5em;
   padding: 12px;
   width: fit-content;
-  transition: 1s;
+  transition: 0.25s;
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
+  color: white;
+  background-color: #f24236;
 }
 
 /* REPONSIVE HERE */
@@ -709,15 +725,25 @@ button:hover {
     line-height: 1em;
   }
 
-  .card {
-    padding: 1em;
-    box-sizing: border-box;
-  }
-
   .card-wrapper {
     width: 100%;
     grid-template: 1fr / 1fr;
     text-align: justify;
+  }
+
+  .card {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .card:hover {
+    transform: scale(1);
+    animation: none;
+    animation-fill-mode: none;
+  }
+
+  .button-devis:hover {
+    transform: scale(1);
   }
 
   .footer-wrapper {
@@ -800,13 +826,25 @@ button:hover {
 
   .boxes-services {
     width: fit-content;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin: 0;
+  }
+
+  .boxes-services.order6,
+  .boxes-services.order2 {
+    margin: 0 0 3em 0;
   }
 
   .boxes-services img {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    border-radius: 1em 1em 0 0;
+  }
+
+  .flexboxes-services img:hover {
+    transform: scale(1);
+    transform: none;
+  }
+  .flexboxes-services .boxes-services:hover {
+    transform: scale(1);
+    transform: none;
   }
 
   /* CONTACT */
@@ -821,6 +859,15 @@ button:hover {
 
   .box {
     padding: 0;
+  }
+
+  button {
+    color: white;
+    background-color: #f24236;
+  }
+
+  button:hover {
+    transform: scale(1);
   }
 
   table {
@@ -854,6 +901,10 @@ button:hover {
     display: none;
   }
 
+  .flex-nav {
+    height: auto;
+  }
+
   .flex-nav img {
     display: none;
   }
@@ -875,6 +926,17 @@ button:hover {
   nav ul li {
     margin: 0;
     width: 100%;
+    padding: 1.5em 0;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  nav > ul > .button > a:hover {
+    color: #061826;
+    font-weight: 500;
   }
 
   .burger {
@@ -887,7 +949,8 @@ button:hover {
   .burger span {
     width: 100%;
     height: 4px;
-    background-color: white;
+    background-color: #061826;
+    border-radius: 1em;
     display: block;
     position: absolute;
     top: 50%;
@@ -901,7 +964,8 @@ button:hover {
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: white;
+    border-radius: 1em;
+    background-color: #061826;
     transition: transform 0.5s ease-in-out;
   }
 
@@ -954,5 +1018,13 @@ button:hover {
 
   .order4 {
     order: 4;
+  }
+
+  .social ion-icon:hover {
+    transform: scale(1);
+  }
+
+  .social > a:hover {
+    color: #fbf5f3d8;
   }
 }
