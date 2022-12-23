@@ -1105,3 +1105,7 @@ button:hover {
   }
   
 }
+
+.notAMargin {
+  margin-bottom: 0;
+}
